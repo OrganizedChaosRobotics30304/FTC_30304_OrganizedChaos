@@ -65,7 +65,7 @@ public class SimpleLeave extends OpMode {
     public void loop() {
         double elapsed = runtime.seconds();
 
-        if (elapsed < 5.0){
+        if (elapsed < 2.0){
             rightFront.setPower(-0.5);
             leftRear.setPower(-0.5);
         }
