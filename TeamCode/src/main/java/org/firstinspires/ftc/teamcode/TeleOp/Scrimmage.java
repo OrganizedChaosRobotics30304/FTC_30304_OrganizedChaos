@@ -156,8 +156,8 @@ public class Scrimmage extends OpMode {
         double shooterReversePower = gamepad2.right_stick_y;
 
         if (gamepad2.right_trigger > 0.05) {
-            shooterLeft.setPower(shooterForwardPower-0.05); // lower speed for shooter; higher decimal = less speed
-            shooterRight.setPower(shooterForwardPower-0.05);
+            shooterLeft.setPower(shooterForwardPower); // lower speed for shooter; higher decimal = less speed
+            shooterRight.setPower(shooterForwardPower);
         }
         else if (gamepad2.right_stick_y > 0.05) {
             shooterLeft.setPower(-shooterReversePower/2);
